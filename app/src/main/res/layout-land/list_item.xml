@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/song_playlist_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/default_padding"
+    android:background="@color/darkBackground"
+    >
+
+    <ImageView
+        android:id="@+id/iv_list_item"
+        android:layout_width="@dimen/image_list_item_size_width"
+        android:layout_height="@dimen/image_list_item_size_height"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/album_master_of_puppets" />
+    <LinearLayout
+        android:id="@+id/list_item_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/iv_list_item"
+        >
+        <TextView
+            android:id="@+id/tv_list_item_poi_name"
+            style="@style/text_view_1"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            tools:text="Hotel Hotel"
+            />
+
+        <TextView
+            android:id="@+id/tv_list_item_poi_schedule"
+            style="@style/text_view_2"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_access_time_white_18dp"
+            android:drawablePadding="@dimen/half_padding"
+            tools:text="Mo-Su 10:00 18:00"
+            />
+
+        <TextView
+            android:id="@+id/tv_list_item_poi_phone"
+            style="@style/text_view_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_marginBottom="@dimen/default_margin"
+            tools:text="0728189876"
+            android:autoLink="phone"
+            android:drawableStart="@drawable/ic_phone_white_18dp"
+            android:drawablePadding="@dimen/half_padding"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_list_item_poi_address"
+        style="@style/text_view_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_location_on_white_18dp"
+        android:drawablePadding="@dimen/half_padding"
+        tools:text="Ploiesti, str. Cantacuzino, nr. 57A"
+        android:autoLink="map"
+        android:layout_toEndOf="@id/list_item_linear_layout"
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>
