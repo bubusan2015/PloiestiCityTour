@@ -11,11 +11,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        // reviewer question
-        // dar si pentru mentor
-        // e mai bine sa salvez practic fragmentele asa..... adica mai are vreun beneficiu fragmentStatePageAdapter
-        // sau e bine sa creez un fragment nou ori decate ori e nevoie din interiorul...
-        // intrebarea altfel spus pot salva fragmentele intr-o lista arrayList definita in cadrul fragmentStatePageAdapter sau e bine sa le instantiez cu new la getView?
         ViewPager myViewPager=findViewById(R.id.main_viewPager);
         TabLayout myTabLayout=findViewById(R.id.main_tab_layout);
         TourPageAdapter myTourPageAdapter=new TourPageAdapter(getSupportFragmentManager());
