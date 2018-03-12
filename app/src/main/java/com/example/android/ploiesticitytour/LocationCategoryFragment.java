@@ -4,22 +4,19 @@ package com.example.android.ploiesticitytour;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.List;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class LocationCategoryFragment extends Fragment {
-    ListView listView;
+    ListView locationsListView;
 
     public LocationCategoryFragment() {
         // Required empty public constructor
@@ -35,26 +32,26 @@ public class LocationCategoryFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_location_list, container, false);
-        listView = rootView.findViewById(R.id.listview_id);
+        locationsListView = rootView.findViewById(R.id.listview_id);
 
-        ArrayList<Location> list;
+        ArrayList<Location> locationsList;
         int categoryType = getArguments().getInt("categoryType");
         switch (categoryType) {
             case 1:
-                list = Utils.getHotels();
+                locationsList = Utils.getHotels(getContext());
                 break;
             case 2:
-                list = Utils.getRestaurants();
+                locationsList = Utils.getRestaurants(getContext());
                 break;
             case 3:
-                list = Utils.getMuseums();
+                locationsList = Utils.getMuseums(getContext());
                 break;
             default:
-                list = Utils.getNearBy();
+                locationsList = Utils.getNearBy(getContext());
                 break;
         }
-        MyListArrayAdapter hotelsListAdapter = new MyListArrayAdapter(getActivity(), list);
-        listView.setAdapter(hotelsListAdapter);
+        MyListArrayAdapter hotelsListAdapter = new MyListArrayAdapter(getActivity(), locationsList);
+        locationsListView.setAdapter(hotelsListAdapter);
         return rootView;
     }
 

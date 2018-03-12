@@ -1,50 +1,49 @@
 package com.example.android.ploiesticitytour;
 
+import android.content.Context;
+import android.content.res.AssetManager;
+
 import java.util.ArrayList;
 
-/**
- * Created by nibos on 3/8/2018.
- */
-
 public class Utils {
-    public static ArrayList<Location> getHotels() {
+    public static ArrayList<Location> getHotels(Context context) {
         ArrayList<Location> hotelsList=new ArrayList<Location>();
-        hotelsList.add(new Location("Hotel Europa", R.drawable.hotel_europa, "24/7", "0344 103 766", "Strada Gheorghe Grigore Cantacuzino 57, Ploiești",""));
-        hotelsList.add(new Location("Hotel Central", R.drawable.hotel_central, "24/7", "0244 526 641", "Bulevardul Republicii 1, Ploiești 100008", ""));
-        hotelsList.add(new Location("Hotel Tiara", R.drawable.hotel_tiara, "24/7", "0244 590 441", "Strada Tache Ionescu 6, Ploiești 100022", ""));
-        hotelsList.add(new Location("Hotel Vigo Grand", R.drawable.hotel_vigo_grand_hotel, "24/7", "0760 174 339", "Bulevardul Independenței 25, Ploiești 100028", ""));
-        hotelsList.add(new Location("Hotel Albert", R.drawable.hotel_albert, "24/7", "0344 802 788", "Bulevardul Republicii 173, Ploiești", ""));
-        hotelsList.add(new Location("Hotel Acapulco", R.drawable.hotel_acapulco, "24/7", "0244 520 300", "Strada George Coșbuc, Ploiești", ""));
-        hotelsList.add(new Location("Hotel Yarus", R.drawable.hotel_yarus, "24/7", "0737 599 600", "str Republicii, nr 228, Cartier Albert, Ploiești 100072", ""));
+        hotelsList.add(new Location(context.getString(R.string.hotel_europa), R.drawable.hotel_europa, context.getString(R.string.hotel_europa_schedule), context.getString(R.string.hotel_europa_phone), context.getString(R.string.hotel_europa_address)));
+        hotelsList.add(new Location(context.getString(R.string.hotel_central), R.drawable.hotel_central, context.getString(R.string.hotel_central_schedule), context.getString(R.string.hotel_central_phone), context.getString(R.string.hotel_central_address)));
+        hotelsList.add(new Location(context.getString(R.string.hotel_tiara), R.drawable.hotel_tiara, context.getString(R.string.hotel_tiara_schedule), context.getString(R.string.hotel_tiara_phone), context.getString(R.string.hotel_tiara_address)));
+        hotelsList.add(new Location(context.getString(R.string.hotel_vigo_grand), R.drawable.hotel_vigo_grand_hotel, context.getString(R.string.hotel_vigo_grand_schedule), context.getString(R.string.hotel_vigo_grand_phone), context.getString(R.string.hotel_vigo_grand_address)));
+        hotelsList.add(new Location(context.getString(R.string.hotel_albert), R.drawable.hotel_albert, context.getString(R.string.hotel_vigo_grand_schedule), context.getString(R.string.hotel_albert_phone), context.getString(R.string.hotel_albert_address)));
+        hotelsList.add(new Location(context.getString(R.string.hotel_acapulco), R.drawable.hotel_acapulco, context.getString(R.string.hotel_acapulco_address), context.getString(R.string.hotel_acapulco_phone), context.getString(R.string.hotel_acapulco_address)));
+        hotelsList.add(new Location(context.getString(R.string.hotel_yarus), R.drawable.hotel_yarus, context.getString(R.string.hotel_yarus_address), context.getString(R.string.hotel_yarus_phone), context.getString(R.string.hotel_yarus_address)));
         return hotelsList;
     }
 
-    public static ArrayList<Location> getMuseums() {
+    public static ArrayList<Location> getMuseums(Context context) {
         ArrayList<Location> museumsList=new ArrayList<Location>();
-        museumsList.add(new Location("Natural Sciences",R.drawable.muze_stiintele_naturii,"09:00 - 16:30","0244 597 896","Strada Erou Sublocotenent Călin Cătălin 1, Ploiești 100066",""));
-        museumsList.add(new Location("Clock Museum",R.drawable.muzeul_ceasului,"09:00 - 17:00","0244 542 861","Strada Nicolae Simache 1, Ploiești",""));
-        museumsList.add(new Location("National Oil Museum",R.drawable.muzeul_petrolului,"09:00 - 17:00","0244 597 585","Strada Doctor Dumitru Bagdazar 8, Ploiești 100575",""));
-        museumsList.add(new Location("I.L. Caragiale Museum",R.drawable.museum_caragiale,"09:00 - 17:00","0244 514 552","Strada Kutuzov 1, Ploiești",""));
+        museumsList.add(new Location(context.getString(R.string.muzeu_stiinte_naturale),R.drawable.muze_stiintele_naturii,context.getString(R.string.muzeu_stiinte_naturale_schedule),context.getString(R.string.muzeu_stiinte_naturale_phone),context.getString(R.string.muzeu_stiinte_naturale_address)));
+        museumsList.add(new Location(context.getString(R.string.muezul_ceasului),R.drawable.muzeul_ceasului,context.getString(R.string.muezul_ceasului_schedule),context.getString(R.string.muezul_ceasului_phone),context.getString(R.string.muezul_ceasului_address)));
+        museumsList.add(new Location(context.getString(R.string.muzeul_petrolului),R.drawable.muzeul_petrolului,context.getString(R.string.muzeul_petrolului_schedule),context.getString(R.string.muzeul_petrolului_phone),context.getString(R.string.muzeul_petrolului_address)));
+        museumsList.add(new Location(context.getString(R.string.muzeu_caragiale),R.drawable.museum_caragiale,context.getString(R.string.muzeu_caragiale_schedule),context.getString(R.string.muzeu_caragiale_phone),context.getString(R.string.muzeu_caragiale_address)));
         return museumsList;
     }
 
-    public static ArrayList<Location> getRestaurants() {
+    public static ArrayList<Location> getRestaurants(Context context) {
         ArrayList<Location> restaurantsList=new ArrayList<Location>();
-        restaurantsList.add(new Location("Tres Olivos",R.drawable.restaurant_tres_olivos,"12:00 - 23:30","0724 443 448","Strada Rahovei 4, Ploiești 100223",""));
-        restaurantsList.add(new Location("Da Vinci",R.drawable.restaurant_davinci,"12:00 - 23:30","0244 531 873","Piața Mihai Viteazul 110, Ploiești",""));
-        restaurantsList.add(new Location("New London House",R.drawable.restaurant_london,"10:30 - 00:30","0344 802 600","Rondul 2, Bulevardul Independenței, Ploiești" ,""));
-        restaurantsList.add(new Location("Pub OK",R.drawable.restaurant_pubok,"08:00 - 00:00","0723 617 654","Strada Golești 25, Ploiești 100032",""));
-        restaurantsList.add(new Location("Casa Grande Lazarini",R.drawable.restaurant_casa_grande_lazzarini,"09:00 - 23:00","0723 707 030","Bulevardul Republicii 192, Ploiești 107071",""));
+        restaurantsList.add(new Location(context.getString(R.string.restaurant_tres_olivos),R.drawable.restaurant_tres_olivos,context.getString(R.string.restaurant_tres_olivos_schedule),context.getString(R.string.restaurant_tres_olivos_schedule),context.getString(R.string.restaurant_tres_olivos_address)));
+        restaurantsList.add(new Location(context.getString(R.string.restaurant_da_vinci),R.drawable.restaurant_davinci,context.getString(R.string.restaurant_da_vinci_schedule),context.getString(R.string.restaurant_da_vinci_phone),context.getString(R.string.restaurant_da_vinci_address)));
+        restaurantsList.add(new Location(context.getString(R.string.restaurant_london_house),R.drawable.restaurant_london,context.getString(R.string.restaurant_london_house_schedule),context.getString(R.string.restaurant_london_house_phone),context.getString(R.string.restaurant_london_house_address) ));
+        restaurantsList.add(new Location(context.getString(R.string.restaurant_pubok),R.drawable.restaurant_pubok,context.getString(R.string.restaurant_pubok_schedule),context.getString(R.string.restaurant_pubok_phone),context.getString(R.string.restaurant_london_house_address)));
+        restaurantsList.add(new Location(context.getString(R.string.restaurant_casa_grande_lazarini),R.drawable.restaurant_casa_grande_lazzarini,context.getString(R.string.restaurant_casa_grande_lazarini_schedule),context.getString(R.string.restaurant_casa_grande_lazarini_phone),context.getString(R.string.restaurant_casa_grande_lazarini_address)));
         return restaurantsList;
     }
 
-    public static ArrayList<Location> getNearBy() {
+    public static ArrayList<Location> getNearBy(Context context) {
         ArrayList<Location> nearByList=new ArrayList<Location>();
-        nearByList.add(new Location("Peleș Castle",R.drawable.atractii_peles_castle,"09:00 - 17:00","0244 310 918","Aleea Peleșului 2, Sinaia 106100",""));
-        nearByList.add(new Location("Cantacuzino Castle",R.drawable.atractii_cantacuzino,"09:00 - 19:00","0722 960 606","Strada Zamorei 1, Bușteni 105500",""));
-        nearByList.add(new Location("Bucegi Natural Park",R.drawable.atractii_bucegi_natural_park,"24/7","-","Near Sinaia",""));
-        nearByList.add(new Location("Sphinx",R.drawable.atractii_sphinx,"24/7"," - ","Near Busteni",""));
-        nearByList.add(new Location("Babele",R.drawable.atractii_babele,"24/7"," - ","Near Busteni",""));
+        nearByList.add(new Location(context.getString(R.string.atractie_castel_peles),R.drawable.atractii_peles_castle,context.getString(R.string.atractie_castel_peles_schedule),context.getString(R.string.atractie_castel_peles_phone),context.getString(R.string.atractie_castel_peles_address)));
+        nearByList.add(new Location(context.getString(R.string.atractie_cantacuzino),R.drawable.atractii_cantacuzino,context.getString(R.string.atractie_cantacuzino_schedule),context.getString(R.string.atractie_cantacuzino_phone),context.getString(R.string.atractie_cantacuzino_address)));
+        nearByList.add(new Location(context.getString(R.string.atractie_parc_bucegi),R.drawable.atractii_bucegi_natural_park,context.getString(R.string.atractie_parc_bucegi_schedule),context.getString(R.string.atractie_parc_bucegi_phone),context.getString(R.string.atractie_parc_bucegi_address)));
+        nearByList.add(new Location(context.getString(R.string.atractie_sfinx),R.drawable.atractii_sphinx,context.getString(R.string.atractie_sfinx_schedule),context.getString(R.string.atractie_sfinx_phone),context.getString(R.string.atractie_sfinx_address)));
+        nearByList.add(new Location(context.getString(R.string.atractie_babele),R.drawable.atractii_babele,context.getString(R.string.atractie_babele_schedule),context.getString(R.string.atractie_babele_phone),context.getString(R.string.atractie_babele_address)));
         return nearByList;
     }
 }

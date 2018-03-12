@@ -6,10 +6,113 @@
     <string name="about_ploiesti4">Ploiești\'s oil production made it a target during the invasion of Romania by the Central Powers in 1916, but a British Army operation under John Norton-Griffiths destroyed production and sabotaged much of the infrastructure of the industry.[5] Though likely settled much earlier, Ploiești was first mentioned in documents in the 16th century, during the reign of Mihai Viteazul (Michael the Brave), Prince of Wallachia. It flourished as a center for trade and handicraft manufacturing in the 17th and 18th centuries. The road connecting Ploiești to Brașov opened in 1864, and the railway arrived in 1882. Many schools and hospitals date from this time.</string>
     <string name="about_ploiesti5">In the mid-19th century the Ploiești region was one of the world\'s leading oil extraction and refinery sites. The world\'s first large refinery[4] opened at Ploiești in 1856-1857, with US investment. The city is also remembered as the site of the self-styled Republic of Ploiești, a short-lived 1870 revolt against the Romanian monarchy.</string>
     <string name="about_ploiesti6">Ploiești\'s oil production made it a target during the invasion of Romania by the Central Powers in 1916, but a British Army operation under John Norton-Griffiths destroyed production and sabotaged much of the infrastructure of the industry.</string>
+
     <string name="hotels">Hotels</string>
     <string name="restaurants">Restaurants</string>
     <string name="museums">Museums</string>
     <string name="attractions">Attractions Nearby</string>
     <string name="about_ploiesti">About Ploiesti</string>
+
+    <string name="hotel_europa">Hotel Europa</string>
+    <string name="hotel_central">Hotel Central</string>
+    <string name="hotel_tiara">Hotel Tiara</string>
+    <string name="hotel_vigo_grand">Hotel Vigo Grand</string>
+    <string name="hotel_albert">Hotel Albert</string>
+    <string name="hotel_acapulco">Hotel Acapulco</string>
+    <string name="hotel_yarus">Hotel Yarus</string>
+
+    <string name="hotel_europa_address">Strada Gheorghe Grigore Cantacuzino 57, Ploiești</string>
+    <string name="hotel_central_address">Bulevardul Republicii 1, Ploiești 100008</string>
+    <string name="hotel_tiara_address">Strada Tache Ionescu 6, Ploiești 100022</string>
+    <string name="hotel_vigo_grand_address">Bulevardul Independenței 25, Ploiești 100028</string>
+    <string name="hotel_albert_address">Bulevardul Republicii 173, Ploiești</string>
+    <string name="hotel_acapulco_address">Strada George Coșbuc, Ploiești</string>
+    <string name="hotel_yarus_address">str Republicii, nr 228, Cartier Albert, Ploiești 100072</string>
+
+    <string name="hotel_europa_phone">0344 103 766</string>
+    <string name="hotel_central_phone">0244 526 641</string>
+    <string name="hotel_tiara_phone">0244 590 441</string>
+    <string name="hotel_vigo_grand_phone">0760 174 339</string>
+    <string name="hotel_albert_phone">0344 802 788</string>
+    <string name="hotel_acapulco_phone">0244 520 300</string>
+    <string name="hotel_yarus_phone">0244 520 300</string>
+
+    <string name="hotel_europa_schedule">24/7</string>
+    <string name="hotel_central_schedule">24/7</string>
+    <string name="hotel_tiara_schedule">24/7</string>
+    <string name="hotel_vigo_grand_schedule">24/7</string>
+    <string name="hotel_albert_schedule">24/7</string>
+    <string name="hotel_acapulco_schedule">24/7</string>
+    <string name="hotel_yarus_schedule">24/7</string>
+
+
+    <string name="muzeu_stiinte_naturale">Natural Sciences</string>
+    <string name="muezul_ceasului">Clock Museum</string>
+    <string name="muzeul_petrolului">National Oil Museum</string>
+    <string name="muzeu_caragiale">I.L. Caragiale Museum</string>
+
+    <string name="muzeu_stiinte_naturale_address">Strada Erou Sublocotenent Călin Cătălin 1, Ploiești 100066</string>
+    <string name="muezul_ceasului_address">Strada Nicolae Simache 1, Ploiești</string>
+    <string name="muzeul_petrolului_address">Strada Doctor Dumitru Bagdazar 8, Ploiești 100575</string>
+    <string name="muzeu_caragiale_address">Strada Kutuzov 1, Ploiești</string>
+
+    <string name="muzeu_stiinte_naturale_schedule">09:00 - 16:30</string>
+    <string name="muezul_ceasului_schedule">09:00 - 17:00</string>
+    <string name="muzeul_petrolului_schedule">09:00 - 17:00</string>
+    <string name="muzeu_caragiale_schedule">09:00 - 17:00</string>
+
+    <string name="muzeu_stiinte_naturale_phone">0244 597 896</string>
+    <string name="muezul_ceasului_phone">0244 542 861</string>
+    <string name="muzeul_petrolului_phone">0244 597 585</string>
+    <string name="muzeu_caragiale_phone">0244 514 552</string>
+
+    <string name="restaurant_tres_olivos">Tres Olivos</string>
+    <string name="restaurant_da_vinci">Da Vinci</string>
+    <string name="restaurant_london_house">New London House</string>
+    <string name="restaurant_pubok">Pub OK</string>
+    <string name="restaurant_casa_grande_lazarini">Casa Grande Lazarini</string>
+
+    <string name="restaurant_tres_olivos_address">Strada Rahovei 4, Ploiești 100223</string>
+    <string name="restaurant_da_vinci_address">Piața Mihai Viteazul 110, Ploiești</string>
+    <string name="restaurant_london_house_address">Rondul 2, Bulevardul Independenței, Ploiești</string>
+    <string name="restaurant_pubok_address">Strada Golești 25, Ploiești 100032</string>
+    <string name="restaurant_casa_grande_lazarini_address">Bulevardul Republicii 192, Ploiești 107071</string>
+
+    <string name="restaurant_tres_olivos_schedule">12:00 - 23:30</string>
+    <string name="restaurant_da_vinci_schedule">12:00 - 23:30</string>
+    <string name="restaurant_london_house_schedule">10:30 - 00:30</string>
+    <string name="restaurant_pubok_schedule">08:00 - 00:00</string>
+    <string name="restaurant_casa_grande_lazarini_schedule">09:00 - 23:30</string>
+
+    <string name="restaurant_tres_olivos_phone">0724 443 448</string>
+    <string name="restaurant_da_vinci_phone">0244 531 873</string>
+    <string name="restaurant_london_house_phone">0344 802 600</string>
+    <string name="restaurant_pubok_phone">0723 617 654</string>
+    <string name="restaurant_casa_grande_lazarini_phone">0722 514 365</string>
+
+    <string name="atractie_castel_peles">Peleș Castle</string>
+    <string name="atractie_cantacuzino">Cantacuzino Castle</string>
+    <string name="atractie_parc_bucegi">Bucegi Natural Park</string>
+    <string name="atractie_sfinx">Sphinx</string>
+    <string name="atractie_babele">Babele</string>
+
+    <string name="atractie_castel_peles_address">Aleea Peleșului 2, Sinaia 106100</string>
+    <string name="atractie_cantacuzino_address">Strada Zamorei 1, Bușteni 105500</string>
+    <string name="atractie_parc_bucegi_address">Near Sianaia</string>
+    <string name="atractie_sfinx_address">Near Busteni</string>
+    <string name="atractie_babele_address">Near Busteni</string>
+
+    <string name="atractie_castel_peles_schedule">09:00 - 17:00</string>
+    <string name="atractie_cantacuzino_schedule">09:00 - 19:00</string>
+    <string name="atractie_parc_bucegi_schedule">24/7</string>
+    <string name="atractie_sfinx_schedule">24/7</string>
+    <string name="atractie_babele_schedule">24/7</string>
+
+    <string name="atractie_castel_peles_phone">0244 310 918</string>
+    <string name="atractie_cantacuzino_phone">0722 960 606</string>
+    <string name="atractie_parc_bucegi_phone">-</string>
+    <string name="atractie_sfinx_phone">-</string>
+    <string name="atractie_babele_phone">-</string>
+
 
 </resources>

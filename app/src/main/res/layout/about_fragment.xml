@@ -16,37 +16,37 @@
             android:src="@drawable/ploiesti" />
 
         <TextView
-            style="@style/text_view_3"
+            style="@style/about_fragment_paragraph_style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/about_ploiesti1" />
 
         <TextView
-            style="@style/text_view_3"
+            style="@style/about_fragment_paragraph_style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/about_ploiesti2" />
 
         <TextView
-            style="@style/text_view_3"
+            style="@style/about_fragment_paragraph_style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/about_ploiesti3" />
 
         <TextView
-            style="@style/text_view_3"
+            style="@style/about_fragment_paragraph_style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/about_ploiesti4" />
 
         <TextView
-            style="@style/text_view_3"
+            style="@style/about_fragment_paragraph_style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/about_ploiesti5" />
 
         <TextView
-            style="@style/text_view_3"
+            style="@style/about_fragment_paragraph_style"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/about_ploiesti6" />

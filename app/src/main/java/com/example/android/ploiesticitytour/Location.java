@@ -5,17 +5,17 @@ package com.example.android.ploiesticitytour;
  */
 
 public class Location {
-    String name;
-    int    imageResourceId;
-    String bussinessHours;
-    String phone;
-    String adress;
-    String description;
+    private String name;
+    private int    imageResourceId;
+    private String bussinessHours;
+    private String phone;
+    private String adress;
+    private String description;
 
     public Location() {
     }
 
-    public Location(String name, int imageResourceId, String bussinessHours, String phone, String adress, String description) {
+    public Location(String name, int imageResourceId, String bussinessHours, String phone, String adress ) {
         this.name = name;
         this.imageResourceId = imageResourceId;
         this.bussinessHours = bussinessHours;

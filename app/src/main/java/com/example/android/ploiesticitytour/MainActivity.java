@@ -11,8 +11,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ViewPager myViewPager=findViewById(R.id.main_viewPager);
-        TabLayout myTabLayout=findViewById(R.id.main_tab_layout);
+        ViewPager locationsViewPager=findViewById(R.id.main_viewPager);
+        TabLayout locationsTabLayout=findViewById(R.id.main_tab_layout);
         TourPageAdapter myTourPageAdapter=new TourPageAdapter(getSupportFragmentManager());
         myTourPageAdapter.addFragment(new LocationCategoryFragment(),getString(R.string.hotels),1);
         myTourPageAdapter.addFragment(new LocationCategoryFragment(),getString(R.string.restaurants),2);
@@ -20,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
         myTourPageAdapter.addFragment(new LocationCategoryFragment(),getString(R.string.attractions),4);
         myTourPageAdapter.addFragment(new AboutFragment(),getString(R.string.about_ploiesti),0);
 
-        myViewPager.setAdapter(myTourPageAdapter);
-        myTabLayout.setupWithViewPager(myViewPager);
+        locationsViewPager.setAdapter(myTourPageAdapter);
+        locationsTabLayout.setupWithViewPager(locationsViewPager);
 
     }
 }

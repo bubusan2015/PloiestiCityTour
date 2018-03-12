@@ -31,19 +31,19 @@ public class MyListArrayAdapter extends ArrayAdapter<Location> {
         View rootView=convertView;
         if (rootView==null)
             rootView= LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent,false);
-        ImageView imageView=rootView.findViewById(R.id.iv_list_item);
-        TextView title=rootView.findViewById(R.id.tv_list_item_poi_name);
-        TextView schedule=rootView.findViewById(R.id.tv_list_item_poi_schedule);
-        TextView phone=rootView.findViewById(R.id.tv_list_item_poi_phone);
-        TextView address=rootView.findViewById(R.id.tv_list_item_poi_address);
+        ImageView locationImageView=rootView.findViewById(R.id.iv_list_item);
+        TextView titleTextView=rootView.findViewById(R.id.tv_list_item_poi_name);
+        TextView scheduleTextView=rootView.findViewById(R.id.tv_list_item_poi_schedule);
+        TextView phoneTextView=rootView.findViewById(R.id.tv_list_item_poi_phone);
+        TextView addressTextView=rootView.findViewById(R.id.tv_list_item_poi_address);
         Location currentLocation=getItem(position);
         if(currentLocation.getImageResourceId()!=0)  {
-            imageView.setImageResource(currentLocation.getImageResourceId());
+            locationImageView.setImageResource(currentLocation.getImageResourceId());
         }
-        title.setText(currentLocation.getName());
-        schedule.setText(currentLocation.getBussinessHours());
-        phone.setText(currentLocation.getPhone());
-        address.setText(currentLocation.getLocation());
+        titleTextView.setText(currentLocation.getName());
+        scheduleTextView.setText(currentLocation.getBussinessHours());
+        phoneTextView.setText(currentLocation.getPhone());
+        addressTextView.setText(currentLocation.getLocation());
         return rootView;
     }
 }

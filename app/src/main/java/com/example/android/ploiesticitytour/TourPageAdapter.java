@@ -8,10 +8,6 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by nibos on 3/8/2018.
- */
-
 public class TourPageAdapter extends FragmentStatePagerAdapter {
     ArrayList<Fragment> fragmentsList=new ArrayList<Fragment>();
     ArrayList<String> titlesList=new ArrayList<String>();
@@ -22,9 +18,7 @@ public class TourPageAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public CharSequence getPageTitle(int position) {
-//        return super.getPageTitle(position);
         return (CharSequence) titlesList.get(position);
-
     }
 
     @Override
