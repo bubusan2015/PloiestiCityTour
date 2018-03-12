@@ -39,16 +39,5 @@
             android:layout_height="wrap_content"
             android:text="@string/about_ploiesti4" />
 
-        <TextView
-            style="@style/about_fragment_paragraph_style"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/about_ploiesti5" />
-
-        <TextView
-            style="@style/about_fragment_paragraph_style"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/about_ploiesti6" />
     </LinearLayout>
 </ScrollView>
